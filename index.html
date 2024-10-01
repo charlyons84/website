@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My Cybersecurity Lair!</title>
+    <style>
+        body {
+            background-color: #000000; /* Black background */
+            color: #00FF00; /* Hacker-green text */
+            font-family: 'Courier New', monospace; /* Classic terminal font */
+        }
+        h1 {
+            color: #FF69B4; /* Hot pink heading */
+            text-align: center;
+            text-shadow: 2px 2px 5px #00FF00; /* Green shadow for hacker vibes */
+        }
+        .content {
+            width: 75%;
+            margin: auto;
+            background-color: #111111; /* Slightly lighter black for content background */
+            border: 5px solid #FF69B4; /* Hot pink border */
+            padding: 20px;
+            color: #FFFFFF; /* White text inside content for readability */
+        }
+        .blinking {
+            animation: blink 1s step-start infinite;
+            color: #FF69B4; /* Hot pink blinking text */
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        .marquee {
+            font-size: 24px;
+            color: #FFC0CB; /* Light hot pink text */
+            background-color: #333333; /* Dark grey background for marquee */
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #FF69B4; /* Hot pink border */
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 5px solid #FF69B4; /* Hot pink border for profile picture */
+            width: 200px; /* Set the size of the profile picture */
+            height: 200px;
+        }
+        a {
+            color: #FF69B4; /* Hot pink links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .hit-counter {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #222222; /* Darker background for hit counter */
+            border: 3px solid #FF69B4; /* Hot pink border */
+            color: #FFFFFF; /* White text */
+        }
+        footer {
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .resume-section {
+            margin-top: 40px;
+            background-color: #222222; /* Darker background for resume section */
+            padding: 20px;
+            border: 3px solid #FF69B4; /* Hot pink border */
+        }
+        .cyber-quote {
+            font-style: italic;
+            color: #00FF00;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .resume-link {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 20px;
+            color: #FF69B4;
+        }
+        .resume-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hit-counter">
+        <p>You're visitor number:</p>
+        <?php include 'counter.php'; ?>
+    </div>
+
+    <h1>Welcome to My Cybersecurity Lair!</h1>
+
+    <div class="marquee">
+        <marquee>💻 You're now entering the hacker's domain 💻</marquee>
+    </div>
+
+    <div class="content">
+        <h2>Who Am I?</h2>
+        <p>I’m a <span class="blinking">cybersecurity professional</span> protecting networks, servers, and all things digital.</p>
+        <p>Here you’ll find my journey in the world of cybersecurity, and if you're curious, you can even check out my <a href="#resume">resume</a>.</p>
+        
+        <!-- Profile Photo Section -->
+        <h2>My Profile</h2>
+        <img src="your-profile-photo.jpg" alt="My Profile Picture">
+        <p style="text-align:center;">This is me, fighting digital threats by day and exploring retro tech by night!</p>
+
+        <h2>Skills:</h2>
+        <ul>
+            <li><b>Penetration Testing</b> - If it’s hackable, I’ll find it.</li>
+            <li><b>Network Security</b> - I defend firewalls with gusto.</li>
+            <li><b>Encryption</b> - Keeping secrets safe with style.</li>
+            <li><b>Social Engineering</b> - The art of getting passwords, the fun way!</li>
+        </ul>
+
+        <!-- Resume Section -->
+        <div id="resume" class="resume-section">
+            <h2>My Resume</h2>
+            <p>Want to dive deeper into my professional background? You can download my resume by clicking below:</p>
+            <a class="resume-link" href="my-resume.pdf" download>Download My Resume</a>
+        </div>
+
+        <h2 id="gallery">Cybersecurity Memes & GIFs</h2>
+        <img src="https://media.giphy.com/media/3og0INyCmHlNylks9O/giphy.gif" alt="Hacker GIF">
+        <img src="https://media.giphy.com/media/l0IyhI5CnUIr71tKo/giphy.gif" alt="Code GIF">
+        <img src="https://media.giphy.com/media/l0K4kWJirLty7lRuo/giphy.gif" alt="Matrix Code GIF">
+
+        <div class="cyber-quote">
+            "The quieter you become, the more you are able to hear." – Hackerman, 1995
+        </div>
+    </div>
+
+    <footer>
+        <p>Thanks for visiting my digital fortress! 💾</p>
+        <p>
+            <a href="mailto:hackermaster@cyberspace.com">Email me (securely, of course)!</a> | 
+            <a href="#guestbook">Sign my Guestbook (no phishing, please)!</a>
+        </p>
+    </footer>
+
+</body>
+</html>
+
